@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.WinApi", "Korn.Utils.WinApi\Korn.Utils.WinApi.csproj", "{51CD8F6E-AC42-48CF-AFC3-632806DE5305}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Modules.WinApi", "Korn.Modules.WinApi\Korn.Modules.WinApi.csproj", "{51CD8F6E-AC42-48CF-AFC3-632806DE5305}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
