@@ -1,9 +1,9 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi.Ole
 {
     [StructLayout(LayoutKind.Sequential)]
-    public unsafe struct SoleAuthSvc
+    public unsafe struct OleAuthSvc
     {
         public RpcAuthnSvc AuthnSvc;
         public RpcAuthzSvc AuthzSvc;

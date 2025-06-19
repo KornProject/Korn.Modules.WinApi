@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi
 {
     public static unsafe class User32
     {

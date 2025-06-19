@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-namespace Korn.Utils
+﻿namespace Korn.Modules.WinApi.Kernel
 {
     public struct ThreadEntry32
     {

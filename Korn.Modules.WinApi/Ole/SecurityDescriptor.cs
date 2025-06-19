@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Korn.Utils
+﻿namespace Korn.Modules.WinApi.Ole
 {
     public unsafe struct SecurityDescriptor
     {

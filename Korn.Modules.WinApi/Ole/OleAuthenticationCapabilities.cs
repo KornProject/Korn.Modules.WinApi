@@ -1,6 +1,6 @@
-﻿namespace Korn.Utils
+﻿namespace Korn.Modules.WinApi.Ole
 {
-    public enum EoleAuthenticationCapabilities : uint
+    public enum OleAuthenticationCapabilities : uint
     {
         None = 0,
         MutualAuth = 0x1,

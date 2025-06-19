@@ -1,4 +1,4 @@
-﻿namespace Korn.Utils
+﻿namespace Korn.Modules.WinApi.Ole
 {
     public enum SecurityDescriptorControl : ushort
     {

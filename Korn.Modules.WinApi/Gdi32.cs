@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi
 {
     public unsafe static class Gdi32
     {

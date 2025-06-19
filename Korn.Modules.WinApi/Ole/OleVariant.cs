@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi.Ole
 {
     [StructLayout(LayoutKind.Explicit, Size = 24)]
     public unsafe struct OleVariant

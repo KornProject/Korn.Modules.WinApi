@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Korn.Modules.WinApi.Ole;
+using System;
 using System.Runtime.InteropServices;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi
 {
     public static unsafe class Ole32
     {
@@ -14,23 +15,23 @@ namespace Korn.Utils
         [DllImport(ole)] static extern int CoInitializeSecurity(
             SecurityDescriptor* securityDescriptor, 
             CoAuthSvc authConstants, 
-            SoleAuthSvc* asAuth, 
+            OleAuthSvc* asAuth, 
             IntPtr reserved, 
             RpcAuthnLevel authLevel, 
             RpcImplLevel implLevel, 
-            SoleAuthenticationList* authList, 
-            EoleAuthenticationCapabilities capabilities, 
+            OleAuthenticationList* authList, 
+            OleAuthenticationCapabilities capabilities, 
             IntPtr reserved2
         );
 
         public static int CoInitializeSecurity(
             SecurityDescriptor* securityDescriptor,
             CoAuthSvc authConstants,
-            SoleAuthSvc* asAuth,
+            OleAuthSvc* asAuth,
             RpcAuthnLevel authLevel,
             RpcImplLevel implLevel,
-            SoleAuthenticationList* authList,
-            EoleAuthenticationCapabilities capabilities
+            OleAuthenticationList* authList,
+            OleAuthenticationCapabilities capabilities
         ) => CoInitializeSecurity(securityDescriptor, authConstants, asAuth, IntPtr.Zero, authLevel, implLevel, authList, capabilities, IntPtr.Zero);
 
         [DllImport(ole)] static extern int CoCreateInstance(Guid* clsid, void* unknownOuter, CoClassContext classContext, Guid* iid, void* ppv);
@@ -46,7 +47,7 @@ namespace Korn.Utils
             RpcAuthnLevel authnLevel, 
             RpcImplLevel impLevel,
             IntPtr authInfoHandle, 
-            EoleAuthenticationCapabilities capabilities
+            OleAuthenticationCapabilities capabilities
         );
 
         [DllImport(ole, EntryPoint = "PropSysAllocString")]

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi.Kernel
 {
     [Flags]
     public enum MemoryProtect

@@ -1,7 +1,6 @@
-﻿
-namespace Korn.Utils
+﻿namespace Korn.Modules.WinApi.Ole
 {
-    public unsafe struct SoleAuthenticationInfo
+    public unsafe struct OleAuthenticationInfo
     {
         public RpcAuthnSvc AuthnSvc;
         public RpcAuthzSvc AuthzSvc;

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Korn.Utils
+namespace Korn.Modules.WinApi.Kernel
 {
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct ProcessBasicInformation

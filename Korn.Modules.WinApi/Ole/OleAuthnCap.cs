@@ -1,6 +1,6 @@
-﻿namespace Korn.Utils
+﻿namespace Korn.Modules.WinApi.Ole
 {
-    public enum EoAuthnCap
+    public enum OleAuthnCap
     {
         None = 0x00,
         MutualAuth = 0x01,
